@@ -1,0 +1,27 @@
+{
+  "name": "dsh-cnwrite",
+  "version": "0.1.0",
+  "description": "中文写作助手：自动排版（中英文之间加空格、修正标点、清理多余空行）+ 写作统计（字数、阅读时长、段落结构）",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "chinese",
+    "writing",
+    "text-polish"
+  ],
+  "files": [
+    "index.js",
+    "cordis.patch.yml"
+  ],
+  "dependencies": {
+    "@deepseek-ai/dsh-tools": "^0.0.1-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
